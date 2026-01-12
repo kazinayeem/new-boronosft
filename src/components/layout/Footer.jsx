@@ -144,6 +144,22 @@ const Footer = () => {
           </div>
         </div>
 
+        {/* Referral & Partnerships */}
+        <div className="mt-12 grid grid-cols-1 lg:grid-cols-2 gap-6 p-6 bg-white/5 border border-white/10 rounded-2xl">
+          <div className="space-y-3">
+            <h3 className="text-lg font-semibold">Refer & Earn (10-15%)</h3>
+            <p className="text-gray-300 text-sm leading-relaxed">
+              Are you an agency or trusted partner? Refer qualified projects and earn 10-15% on closed deals. We handle delivery; you keep your client relationships strong.
+            </p>
+          </div>
+          <div className="space-y-3">
+            <h3 className="text-lg font-semibold">Have a SaaS idea?</h3>
+            <p className="text-gray-300 text-sm leading-relaxed">
+              Bring your product idea—even with no upfront budget. We can co-build on a commission/revenue-share model and get you to market fast.
+            </p>
+          </div>
+        </div>
+
         {/* Office Locations */}
         <div className="mt-12 pt-8 border-t border-gray-700">
           <h3 className="text-lg font-semibold mb-6">Our Global Offices</h3>
