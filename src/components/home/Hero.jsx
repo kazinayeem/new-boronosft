@@ -150,16 +150,16 @@ const Hero = () => {
               </div>
 
               {/* Static corner badges */}
-              <div className="absolute -left-6 top-12 w-20 h-20 bg-gradient-to-br from-blue-500 to-blue-600 rounded-2xl shadow-lg flex items-center justify-center rotate-[-12deg] text-white text-sm font-semibold">
+              <div className="absolute -left-4 top-16 w-20 h-20 bg-gradient-to-br from-blue-500 to-blue-600 rounded-2xl shadow-lg flex items-center justify-center text-white text-sm font-semibold border border-white/30">
                 Secure
               </div>
-              <div className="absolute right-4 top-6 w-20 h-20 bg-gradient-to-br from-green-500 to-emerald-500 rounded-2xl shadow-lg flex items-center justify-center rotate-[10deg] text-white text-sm font-semibold">
+              <div className="absolute right-0 top-10 w-20 h-20 bg-gradient-to-br from-green-500 to-emerald-500 rounded-2xl shadow-lg flex items-center justify-center text-white text-sm font-semibold border border-white/30">
                 24/7
               </div>
-              <div className="absolute left-8 bottom-10 w-20 h-20 bg-gradient-to-br from-orange-500 to-amber-500 rounded-2xl shadow-lg flex items-center justify-center rotate-[-8deg] text-white text-sm font-semibold">
+              <div className="absolute left-6 bottom-12 w-20 h-20 bg-gradient-to-br from-orange-500 to-amber-500 rounded-2xl shadow-lg flex items-center justify-center text-white text-sm font-semibold border border-white/30">
                 Fast
               </div>
-              <div className="absolute right-12 bottom-4 w-20 h-20 bg-gradient-to-br from-purple-500 to-indigo-500 rounded-2xl shadow-lg flex items-center justify-center rotate-[14deg] text-white text-sm font-semibold">
+              <div className="absolute right-10 bottom-6 w-20 h-20 bg-gradient-to-br from-purple-500 to-indigo-500 rounded-2xl shadow-lg flex items-center justify-center text-white text-sm font-semibold border border-white/30">
                 Scalable
               </div>
             </div>
