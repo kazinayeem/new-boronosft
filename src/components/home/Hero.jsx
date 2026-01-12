@@ -110,7 +110,7 @@ const Hero = () => {
                 className="absolute w-[400px] h-[400px]"
               >
                 <div className="absolute top-0 left-1/2 transform -translate-x-1/2 w-16 h-16 bg-gradient-to-br from-blue-500 to-blue-600 rounded-2xl shadow-lg flex items-center justify-center">
-                  <span className="text-white font-bold">React</span>
+                  <span className="text-white font-bold text-xs">Secure</span>
                 </div>
               </motion.div>
 
@@ -120,7 +120,7 @@ const Hero = () => {
                 className="absolute w-[350px] h-[350px]"
               >
                 <div className="absolute bottom-0 left-1/2 transform -translate-x-1/2 w-16 h-16 bg-gradient-to-br from-green-500 to-green-600 rounded-2xl shadow-lg flex items-center justify-center">
-                  <span className="text-white font-bold text-xs">Node.js</span>
+                  <span className="text-white font-bold text-xs">24/7</span>
                 </div>
               </motion.div>
 
@@ -130,7 +130,7 @@ const Hero = () => {
                 className="absolute w-[450px] h-[450px]"
               >
                 <div className="absolute left-0 top-1/2 transform -translate-y-1/2 w-16 h-16 bg-gradient-to-br from-purple-500 to-purple-600 rounded-2xl shadow-lg flex items-center justify-center">
-                  <span className="text-white font-bold text-xs">Mongo</span>
+                  <span className="text-white font-bold text-xs">Scalable</span>
                 </div>
               </motion.div>
 
@@ -140,7 +140,7 @@ const Hero = () => {
                 className="absolute w-[380px] h-[380px]"
               >
                 <div className="absolute right-0 top-1/2 transform -translate-y-1/2 w-16 h-16 bg-gradient-to-br from-orange-500 to-orange-600 rounded-2xl shadow-lg flex items-center justify-center">
-                  <span className="text-white font-bold text-xs">AWS</span>
+                  <span className="text-white font-bold text-xs">Fast</span>
                 </div>
               </motion.div>
 
