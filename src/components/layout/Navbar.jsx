@@ -38,6 +38,8 @@ const Navbar = () => {
     },
     { name: 'Technologies', path: '/technologies' },
     { name: 'Case Studies', path: '/case-studies' },
+    { name: 'Refer & Earn', path: '/refer-earn' },
+    { name: 'SaaS Co-build', path: '/saas-cobuild' },
     { name: 'Careers', path: '/careers' },
     { name: 'Blog', path: '/blog' },
   ];

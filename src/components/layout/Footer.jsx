@@ -14,6 +14,8 @@ const Footer = () => {
       { name: 'Careers', path: '/careers' },
       { name: 'Case Studies', path: '/case-studies' },
       { name: 'Blog', path: '/blog' },
+      { name: 'Refer & Earn', path: '/refer-earn' },
+      { name: 'SaaS Co-build', path: '/saas-cobuild' },
     ],
     services: [
       { name: 'Custom Software', path: '/services' },

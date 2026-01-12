@@ -95,49 +95,36 @@ const Hero = () => {
             </motion.div>
           </motion.div>
 
-          {/* Right Content - Animated Illustration */}
+          {/* Right Content - Minimal visual */}
           <motion.div
             initial={{ opacity: 0, x: 50 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.8 }}
             className="relative hidden lg:block"
           >
-            <div className="relative w-full h-[520px]">
+            <div className="relative w-full h-[520px] flex items-center justify-center">
               <div className="absolute inset-0 bg-gradient-to-br from-blue-50 via-white to-purple-50 rounded-3xl shadow-2xl border border-white/70" />
-
-              <div className="absolute inset-10 rounded-2xl bg-white shadow-xl border border-gray-100 p-8 flex flex-col items-center text-center gap-6">
+              <div className="relative z-10 w-[480px] max-w-full bg-white rounded-2xl shadow-xl border border-gray-100 p-10 flex flex-col items-center text-center gap-6">
                 <div className="w-24 h-24 bg-gradient-to-br from-blue-600 to-purple-600 rounded-3xl shadow-lg flex items-center justify-center">
                   <img src="/logo.png" alt="BornoSoft-NR" className="h-16 w-16 object-contain" />
                 </div>
                 <div>
                   <p className="text-sm text-gray-500">Trusted technology partner</p>
-                  <p className="text-2xl font-bold text-gray-900 mt-1">300+ businesses</p>
-                  <p className="text-sm text-gray-600">Secure • Fast • 24/7 • Scalable</p>
+                  <p className="text-3xl font-bold text-gray-900 mt-1">300+ businesses</p>
+                  <p className="text-sm text-gray-600">AI products • SaaS build • Revenue-share options</p>
                 </div>
-
-                <div className="w-full grid grid-cols-2 gap-4">
-                  <div className="p-4 rounded-xl bg-gradient-to-br from-blue-50 to-blue-100/60 border border-blue-200 text-left">
-                    <p className="text-xs text-blue-700 font-semibold">Uptime</p>
-                    <p className="text-xl font-bold text-gray-900">99.97%</p>
-                    <p className="text-xs text-blue-700">Monitored 24/7</p>
+                <div className="w-full grid grid-cols-1 md:grid-cols-2 gap-4 text-left">
+                  <div className="p-4 rounded-xl bg-gradient-to-br from-blue-50 to-blue-100/60 border border-blue-100">
+                    <p className="text-xs text-blue-700 font-semibold">Refer & Earn</p>
+                    <p className="text-lg font-bold text-gray-900">10-15% commission</p>
+                    <p className="text-xs text-blue-700">We deliver, you nurture clients</p>
                   </div>
-                  <div className="p-4 rounded-xl bg-gradient-to-br from-purple-50 to-purple-100/60 border border-purple-200 text-left">
-                    <p className="text-xs text-purple-700 font-semibold">Delivery</p>
-                    <p className="text-xl font-bold text-gray-900">2x faster</p>
-                    <p className="text-xs text-purple-700">Compared to industry</p>
-                  </div>
-                  <div className="p-4 rounded-xl bg-gradient-to-br from-emerald-50 to-emerald-100/60 border border-emerald-200 text-left">
-                    <p className="text-xs text-emerald-700 font-semibold">Support</p>
-                    <p className="text-xl font-bold text-gray-900">24/7</p>
-                    <p className="text-xs text-emerald-700">Real people, real time</p>
-                  </div>
-                  <div className="p-4 rounded-xl bg-gradient-to-br from-amber-50 to-amber-100/60 border border-amber-200 text-left">
-                    <p className="text-xs text-amber-700 font-semibold">Satisfaction</p>
-                    <p className="text-xl font-bold text-gray-900">4.9/5</p>
-                    <p className="text-xs text-amber-700">Based on 300+ clients</p>
+                  <div className="p-4 rounded-xl bg-gradient-to-br from-emerald-50 to-emerald-100/60 border border-emerald-100">
+                    <p className="text-xs text-emerald-700 font-semibold">Co-build SaaS/AI</p>
+                    <p className="text-lg font-bold text-gray-900">Zero upfront</p>
+                    <p className="text-xs text-emerald-700">Commission / revenue-share</p>
                   </div>
                 </div>
-
                 <div className="w-full p-4 rounded-xl bg-gradient-to-r from-blue-600 to-purple-600 text-white shadow-md flex items-center justify-between">
                   <div>
                     <p className="text-sm opacity-80">Ready when you are</p>
@@ -147,20 +134,6 @@ const Hero = () => {
                     Avg. reply: 2 minutes
                   </div>
                 </div>
-              </div>
-
-              {/* Static corner badges */}
-              <div className="absolute -left-4 top-16 w-20 h-20 bg-gradient-to-br from-blue-500 to-blue-600 rounded-2xl shadow-lg flex items-center justify-center text-white text-sm font-semibold border border-white/30">
-                Secure
-              </div>
-              <div className="absolute right-0 top-10 w-20 h-20 bg-gradient-to-br from-green-500 to-emerald-500 rounded-2xl shadow-lg flex items-center justify-center text-white text-sm font-semibold border border-white/30">
-                24/7
-              </div>
-              <div className="absolute left-6 bottom-12 w-20 h-20 bg-gradient-to-br from-orange-500 to-amber-500 rounded-2xl shadow-lg flex items-center justify-center text-white text-sm font-semibold border border-white/30">
-                Fast
-              </div>
-              <div className="absolute right-10 bottom-6 w-20 h-20 bg-gradient-to-br from-purple-500 to-indigo-500 rounded-2xl shadow-lg flex items-center justify-center text-white text-sm font-semibold border border-white/30">
-                Scalable
               </div>
             </div>
           </motion.div>
