@@ -102,56 +102,62 @@ const Hero = () => {
             transition={{ duration: 0.8 }}
             className="relative hidden lg:block"
           >
-            <div className="relative w-full h-[500px] flex items-center justify-center">
-              {/* Orbiting Elements */}
-              <motion.div
-                animate={{ rotate: 360 }}
-                transition={{ duration: 20, repeat: Infinity, ease: "linear" }}
-                className="absolute w-[400px] h-[400px]"
-              >
-                <div className="absolute top-0 left-1/2 transform -translate-x-1/2 w-16 h-16 bg-gradient-to-br from-blue-500 to-blue-600 rounded-2xl shadow-lg flex items-center justify-center">
-                  <span className="text-white font-bold text-xs">Secure</span>
-                </div>
-              </motion.div>
+            <div className="relative w-full h-[520px]">
+              <div className="absolute inset-0 bg-gradient-to-br from-blue-50 via-white to-purple-50 rounded-3xl shadow-2xl border border-white/70" />
 
-              <motion.div
-                animate={{ rotate: -360 }}
-                transition={{ duration: 25, repeat: Infinity, ease: "linear" }}
-                className="absolute w-[350px] h-[350px]"
-              >
-                <div className="absolute bottom-0 left-1/2 transform -translate-x-1/2 w-16 h-16 bg-gradient-to-br from-green-500 to-green-600 rounded-2xl shadow-lg flex items-center justify-center">
-                  <span className="text-white font-bold text-xs">24/7</span>
+              <div className="absolute inset-6 rounded-2xl bg-white/70 backdrop-blur-sm border border-white/60 shadow-lg p-6 flex flex-col justify-between">
+                <div className="flex items-center justify-between">
+                  <div>
+                    <p className="text-sm text-gray-500">Platform Status</p>
+                    <p className="text-2xl font-bold text-gray-900">99.97% Uptime</p>
+                    <p className="text-sm text-green-600 font-semibold">All systems operational</p>
+                  </div>
+                  <motion.div
+                    animate={{ scale: [1, 1.03, 1] }}
+                    transition={{ duration: 3, repeat: Infinity }}
+                    className="w-16 h-16 bg-gradient-to-br from-blue-600 to-purple-600 rounded-2xl flex items-center justify-center shadow-lg"
+                  >
+                    <img src="/logo.png" alt="BornoSoft-NR" className="h-10 w-10 object-contain" />
+                  </motion.div>
                 </div>
-              </motion.div>
 
-              <motion.div
-                animate={{ rotate: 360 }}
-                transition={{ duration: 30, repeat: Infinity, ease: "linear" }}
-                className="absolute w-[450px] h-[450px]"
-              >
-                <div className="absolute left-0 top-1/2 transform -translate-y-1/2 w-16 h-16 bg-gradient-to-br from-purple-500 to-purple-600 rounded-2xl shadow-lg flex items-center justify-center">
-                  <span className="text-white font-bold text-xs">Scalable</span>
+                <div className="grid grid-cols-2 gap-4 mt-6">
+                  <div className="p-4 rounded-xl bg-white shadow-sm border border-gray-100">
+                    <p className="text-sm text-gray-500">Avg. Response</p>
+                    <p className="text-2xl font-bold text-gray-900">1.2s</p>
+                    <p className="text-xs text-green-600 font-semibold">Real-time monitoring</p>
+                  </div>
+                  <div className="p-4 rounded-xl bg-white shadow-sm border border-gray-100">
+                    <p className="text-sm text-gray-500">Support</p>
+                    <p className="text-2xl font-bold text-gray-900">24/7</p>
+                    <p className="text-xs text-blue-600 font-semibold">Human + AI desk</p>
+                  </div>
+                  <div className="p-4 rounded-xl bg-white shadow-sm border border-gray-100">
+                    <p className="text-sm text-gray-500">Client Satisfaction</p>
+                    <p className="text-2xl font-bold text-gray-900">4.9/5</p>
+                    <p className="text-xs text-purple-600 font-semibold">Based on 300+ clients</p>
+                  </div>
+                  <div className="p-4 rounded-xl bg-white shadow-sm border border-gray-100">
+                    <p className="text-sm text-gray-500">Delivery Speed</p>
+                    <p className="text-2xl font-bold text-gray-900">2x faster</p>
+                    <p className="text-xs text-green-600 font-semibold">Compared to industry</p>
+                  </div>
                 </div>
-              </motion.div>
 
-              <motion.div
-                animate={{ rotate: -360 }}
-                transition={{ duration: 35, repeat: Infinity, ease: "linear" }}
-                className="absolute w-[380px] h-[380px]"
-              >
-                <div className="absolute right-0 top-1/2 transform -translate-y-1/2 w-16 h-16 bg-gradient-to-br from-orange-500 to-orange-600 rounded-2xl shadow-lg flex items-center justify-center">
-                  <span className="text-white font-bold text-xs">Fast</span>
+                <div className="mt-6 p-4 rounded-xl bg-gradient-to-r from-blue-600 to-purple-600 text-white shadow-md flex items-center justify-between">
+                  <div>
+                    <p className="text-sm opacity-80">Trusted by teams worldwide</p>
+                    <p className="text-lg font-semibold">300+ businesses onboarded</p>
+                  </div>
+                  <motion.div
+                    animate={{ y: [-4, 4, -4] }}
+                    transition={{ duration: 4, repeat: Infinity, ease: "easeInOut" }}
+                    className="px-4 py-2 bg-white/20 rounded-lg text-sm font-semibold"
+                  >
+                    Live support • 2 min avg. reply
+                  </motion.div>
                 </div>
-              </motion.div>
-
-              {/* Center Element */}
-              <motion.div
-                animate={{ scale: [1, 1.1, 1] }}
-                transition={{ duration: 3, repeat: Infinity }}
-                className="w-32 h-32 bg-gradient-to-br from-blue-600 to-purple-600 rounded-3xl shadow-2xl flex items-center justify-center"
-              >
-                <span className="text-white font-bold text-2xl">BN</span>
-              </motion.div>
+              </div>
             </div>
           </motion.div>
         </div>
