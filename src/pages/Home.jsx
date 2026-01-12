@@ -1,7 +1,7 @@
 import Hero from '../components/home/Hero';
 import Process from '../components/home/Process';
 import Industries from '../components/home/Industries';
-import TechStack from '../components/home/TechStack';
+import Features from '../components/home/Features';
 import Pricing from '../components/home/Pricing';
 import Stats from '../components/home/Stats';
 import Team from '../components/home/Team';
@@ -16,7 +16,7 @@ const Home = () => {
       <Hero />
       <Process />
       <Industries />
-      <TechStack />
+      <Features />
       <Pricing />
       <Stats />
       <Team />
