@@ -194,19 +194,19 @@ export const processSteps = [
 
 // Statistics
 export const stats = [
-  { id: 1, number: 500, suffix: "+", title: "Projects Delivered" },
-  { id: 2, number: 7, suffix: "+", title: "Years Experience" },
-  { id: 3, number: 300, suffix: "+", title: "Happy Clients" },
-  { id: 4, number: 50, suffix: "+", title: "Team Members" }
+  { id: 1, number: 20, suffix: "+", title: "Projects Delivered" },
+  { id: 2, number: 1.5, suffix: "+", title: "Years Experience" },
+  { id: 3, number: 20, suffix: "+", title: "Happy Clients" },
+  { id: 4, number: 10, suffix: "+", title: "Team Members" }
 ];
 
 // Testimonials
 export const testimonials = [
   {
     id: 1,
-    name: "John Anderson",
-    role: "CEO, TechCorp Inc.",
-    company: "TechCorp Inc.",
+    name: "Jabed",
+    role: "CEO, Learn and Grow",
+    company: "Learn and Grow",
     rating: 5,
     text: "BornoSoft-NR transformed our business with their innovative software solutions. Their team is professional, responsive, and truly understands enterprise needs.",
     avatar: "JA"

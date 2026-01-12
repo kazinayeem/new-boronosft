@@ -105,58 +105,62 @@ const Hero = () => {
             <div className="relative w-full h-[520px]">
               <div className="absolute inset-0 bg-gradient-to-br from-blue-50 via-white to-purple-50 rounded-3xl shadow-2xl border border-white/70" />
 
-              <div className="absolute inset-6 rounded-2xl bg-white/70 backdrop-blur-sm border border-white/60 shadow-lg p-6 flex flex-col justify-between">
-                <div className="flex items-center justify-between">
-                  <div>
-                    <p className="text-sm text-gray-500">Platform Status</p>
-                    <p className="text-2xl font-bold text-gray-900">99.97% Uptime</p>
-                    <p className="text-sm text-green-600 font-semibold">All systems operational</p>
-                  </div>
-                  <motion.div
-                    animate={{ scale: [1, 1.03, 1] }}
-                    transition={{ duration: 3, repeat: Infinity }}
-                    className="w-16 h-16 bg-gradient-to-br from-blue-600 to-purple-600 rounded-2xl flex items-center justify-center shadow-lg"
-                  >
-                    <img src="/logo.png" alt="BornoSoft-NR" className="h-10 w-10 object-contain" />
-                  </motion.div>
+              <div className="absolute inset-10 rounded-2xl bg-white shadow-xl border border-gray-100 p-8 flex flex-col items-center text-center gap-6">
+                <div className="w-24 h-24 bg-gradient-to-br from-blue-600 to-purple-600 rounded-3xl shadow-lg flex items-center justify-center">
+                  <img src="/logo.png" alt="BornoSoft-NR" className="h-16 w-16 object-contain" />
+                </div>
+                <div>
+                  <p className="text-sm text-gray-500">Trusted technology partner</p>
+                  <p className="text-2xl font-bold text-gray-900 mt-1">300+ businesses</p>
+                  <p className="text-sm text-gray-600">Secure • Fast • 24/7 • Scalable</p>
                 </div>
 
-                <div className="grid grid-cols-2 gap-4 mt-6">
-                  <div className="p-4 rounded-xl bg-white shadow-sm border border-gray-100">
-                    <p className="text-sm text-gray-500">Avg. Response</p>
-                    <p className="text-2xl font-bold text-gray-900">1.2s</p>
-                    <p className="text-xs text-green-600 font-semibold">Real-time monitoring</p>
+                <div className="w-full grid grid-cols-2 gap-4">
+                  <div className="p-4 rounded-xl bg-gradient-to-br from-blue-50 to-blue-100/60 border border-blue-200 text-left">
+                    <p className="text-xs text-blue-700 font-semibold">Uptime</p>
+                    <p className="text-xl font-bold text-gray-900">99.97%</p>
+                    <p className="text-xs text-blue-700">Monitored 24/7</p>
                   </div>
-                  <div className="p-4 rounded-xl bg-white shadow-sm border border-gray-100">
-                    <p className="text-sm text-gray-500">Support</p>
-                    <p className="text-2xl font-bold text-gray-900">24/7</p>
-                    <p className="text-xs text-blue-600 font-semibold">Human + AI desk</p>
+                  <div className="p-4 rounded-xl bg-gradient-to-br from-purple-50 to-purple-100/60 border border-purple-200 text-left">
+                    <p className="text-xs text-purple-700 font-semibold">Delivery</p>
+                    <p className="text-xl font-bold text-gray-900">2x faster</p>
+                    <p className="text-xs text-purple-700">Compared to industry</p>
                   </div>
-                  <div className="p-4 rounded-xl bg-white shadow-sm border border-gray-100">
-                    <p className="text-sm text-gray-500">Client Satisfaction</p>
-                    <p className="text-2xl font-bold text-gray-900">4.9/5</p>
-                    <p className="text-xs text-purple-600 font-semibold">Based on 300+ clients</p>
+                  <div className="p-4 rounded-xl bg-gradient-to-br from-emerald-50 to-emerald-100/60 border border-emerald-200 text-left">
+                    <p className="text-xs text-emerald-700 font-semibold">Support</p>
+                    <p className="text-xl font-bold text-gray-900">24/7</p>
+                    <p className="text-xs text-emerald-700">Real people, real time</p>
                   </div>
-                  <div className="p-4 rounded-xl bg-white shadow-sm border border-gray-100">
-                    <p className="text-sm text-gray-500">Delivery Speed</p>
-                    <p className="text-2xl font-bold text-gray-900">2x faster</p>
-                    <p className="text-xs text-green-600 font-semibold">Compared to industry</p>
+                  <div className="p-4 rounded-xl bg-gradient-to-br from-amber-50 to-amber-100/60 border border-amber-200 text-left">
+                    <p className="text-xs text-amber-700 font-semibold">Satisfaction</p>
+                    <p className="text-xl font-bold text-gray-900">4.9/5</p>
+                    <p className="text-xs text-amber-700">Based on 300+ clients</p>
                   </div>
                 </div>
 
-                <div className="mt-6 p-4 rounded-xl bg-gradient-to-r from-blue-600 to-purple-600 text-white shadow-md flex items-center justify-between">
+                <div className="w-full p-4 rounded-xl bg-gradient-to-r from-blue-600 to-purple-600 text-white shadow-md flex items-center justify-between">
                   <div>
-                    <p className="text-sm opacity-80">Trusted by teams worldwide</p>
-                    <p className="text-lg font-semibold">300+ businesses onboarded</p>
+                    <p className="text-sm opacity-80">Ready when you are</p>
+                    <p className="text-lg font-semibold">Book a 15-min consult</p>
                   </div>
-                  <motion.div
-                    animate={{ y: [-4, 4, -4] }}
-                    transition={{ duration: 4, repeat: Infinity, ease: "easeInOut" }}
-                    className="px-4 py-2 bg-white/20 rounded-lg text-sm font-semibold"
-                  >
-                    Live support • 2 min avg. reply
-                  </motion.div>
+                  <div className="px-4 py-2 bg-white/15 rounded-lg text-sm font-semibold">
+                    Avg. reply: 2 minutes
+                  </div>
                 </div>
+              </div>
+
+              {/* Static corner badges */}
+              <div className="absolute -left-6 top-12 w-20 h-20 bg-gradient-to-br from-blue-500 to-blue-600 rounded-2xl shadow-lg flex items-center justify-center rotate-[-12deg] text-white text-sm font-semibold">
+                Secure
+              </div>
+              <div className="absolute right-4 top-6 w-20 h-20 bg-gradient-to-br from-green-500 to-emerald-500 rounded-2xl shadow-lg flex items-center justify-center rotate-[10deg] text-white text-sm font-semibold">
+                24/7
+              </div>
+              <div className="absolute left-8 bottom-10 w-20 h-20 bg-gradient-to-br from-orange-500 to-amber-500 rounded-2xl shadow-lg flex items-center justify-center rotate-[-8deg] text-white text-sm font-semibold">
+                Fast
+              </div>
+              <div className="absolute right-12 bottom-4 w-20 h-20 bg-gradient-to-br from-purple-500 to-indigo-500 rounded-2xl shadow-lg flex items-center justify-center rotate-[14deg] text-white text-sm font-semibold">
+                Scalable
               </div>
             </div>
           </motion.div>
