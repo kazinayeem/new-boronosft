@@ -81,7 +81,7 @@ const Hero = () => {
               className="mt-12 grid grid-cols-3 gap-6 max-w-lg mx-auto lg:mx-0"
             >
               <div className="text-center lg:text-left">
-                <div className="text-3xl font-bold text-blue-600">500+</div>
+                <div className="text-3xl font-bold text-blue-600">50+</div>
                 <div className="text-sm text-gray-600">Projects</div>
               </div>
               <div className="text-center lg:text-left">
@@ -89,7 +89,7 @@ const Hero = () => {
                 <div className="text-sm text-gray-600">Years</div>
               </div>
               <div className="text-center lg:text-left">
-                <div className="text-3xl font-bold text-blue-600">300+</div>
+                <div className="text-3xl font-bold text-blue-600">30+</div>
                 <div className="text-sm text-gray-600">Clients</div>
               </div>
             </motion.div>
@@ -110,7 +110,7 @@ const Hero = () => {
                 </div>
                 <div>
                   <p className="text-sm text-gray-500">Trusted technology partner</p>
-                  <p className="text-3xl font-bold text-gray-900 mt-1">300+ businesses</p>
+                  <p className="text-3xl font-bold text-gray-900 mt-1">50+ businesses</p>
                   <p className="text-sm text-gray-600">AI products • SaaS build • Revenue-share options</p>
                 </div>
                 <div className="w-full grid grid-cols-1 md:grid-cols-2 gap-4 text-left">
