@@ -3,9 +3,9 @@ import { CheckCircle2, Zap, Users, Shield } from 'lucide-react';
 
 const CredibilitySection = () => {
   const stats = [
-    { label: 'Active Clients', value: '50+', icon: Users },
-    { label: 'Projects Delivered', value: '200+', icon: CheckCircle2 },
-    { label: 'Years Experience', value: '10+', icon: Zap },
+    { label: 'Active Clients', value: '9+', icon: Users },
+    { label: 'Projects Delivered', value: '15+', icon: CheckCircle2 },
+    { label: 'Years Experience', value: '2+', icon: Zap },
     { label: 'Success Rate', value: '99.8%', icon: Shield }
   ];
 
@@ -55,7 +55,7 @@ const CredibilitySection = () => {
                 transition={{ duration: 0.6, delay: 0.2 }}
                 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6 leading-tight"
               >
-                Powering <span className="bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">50+ Businesses</span> Worldwide
+                Powering <span className="bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">9+ Businesses</span> Worldwide
               </motion.h2>
 
               {/* Supporting Text */}

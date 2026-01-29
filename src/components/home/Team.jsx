@@ -42,13 +42,6 @@ const Team = () => {
             </motion.div>
           ))}
         </div>
-
-        <div className="mt-12 text-center">
-          <div className="inline-flex items-center space-x-2 px-4 py-2 bg-white rounded-full shadow-sm border border-gray-100">
-            <Users size={18} className="text-blue-600" />
-            <span className="text-sm text-gray-700">50+ engineers, designers, QA, and DevOps specialists across Bangladesh, UAE, and UK</span>
-          </div>
-        </div>
       </div>
     </section>
   );

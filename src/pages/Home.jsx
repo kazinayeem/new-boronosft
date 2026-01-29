@@ -21,7 +21,6 @@ const Home = () => {
       <Features />
       <Pricing />
       <Stats />
-      <Team />
       <Clients />
       <Testimonials />
       <FAQ />
