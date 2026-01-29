@@ -2,7 +2,7 @@ version: "3.9"
 
 services:
   bornosoft:
-    image: kazinayeem/bornosoft:latest
+    image: dockernayeem/bornosoft:latest
     container_name: bornosoft_app
     ports:
       - "80:80"
