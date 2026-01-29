@@ -1,6 +1,9 @@
+import SEO from '../components/SEO';
+import { pageMetadata } from '../config/seo';
 import { Link } from 'react-router-dom';
 
 const ReferEarn = () => {
+  const meta = pageMetadata.referEarn;
   const steps = [
     { title: 'Share a lead', detail: 'Introduce us to a qualified project or decision maker.' },
     { title: 'We handle delivery', detail: 'We scope, build, and support with your client looped in.' },

@@ -1,8 +1,16 @@
+import SEO from '../components/SEO';
 import { motion } from 'framer-motion';
 
 const RefundPolicy = () => {
   return (
-    <div className="min-h-screen pt-32 pb-20">
+    <>
+      <SEO 
+        title="Refund Policy | BornoSoft"
+        description="BornoSoft Refund Policy - Transparent refund terms and conditions."
+        keywords="refund policy, money back guarantee, refund terms"
+        canonical="/refund-policy"
+      />
+      <div className="min-h-screen pt-32 pb-20">
       <div className="container-custom max-w-4xl">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -48,7 +56,8 @@ const RefundPolicy = () => {
           </div>
         </motion.div>
       </div>
-    </div>
+      </div>
+    </>
   );
 };
 

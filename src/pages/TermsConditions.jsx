@@ -1,8 +1,16 @@
+import SEO from '../components/SEO';
 import { motion } from 'framer-motion';
 
 const TermsConditions = () => {
   return (
-    <div className="min-h-screen pt-32 pb-20">
+    <>
+      <SEO 
+        title="Terms & Conditions | BornoSoft"
+        description="BornoSoft Terms & Conditions - Read our service agreement and legal terms."
+        keywords="terms of service, terms and conditions, legal agreement"
+        canonical="/terms-conditions"
+      />
+      <div className="min-h-screen pt-32 pb-20">
       <div className="container-custom max-w-4xl">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -48,7 +56,8 @@ const TermsConditions = () => {
           </div>
         </motion.div>
       </div>
-    </div>
+      </div>
+    </>
   );
 };
 

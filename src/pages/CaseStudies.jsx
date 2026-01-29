@@ -1,7 +1,10 @@
+import SEO from '../components/SEO';
+import { pageMetadata } from '../config/seo';
 import { motion } from 'framer-motion';
 import { Briefcase, TrendingUp, Users } from 'lucide-react';
 
 const CaseStudies = () => {
+  const meta = pageMetadata.caseStudies;
   const caseStudies = [
     { id: 1, title: 'E-commerce Platform Transformation', client: 'TechMart Inc.', results: '150% increase in sales' },
     { id: 2, title: 'Restaurant POS System', client: 'FoodChain Restaurants', results: '40% faster order processing' },
@@ -9,7 +12,14 @@ const CaseStudies = () => {
   ];
 
   return (
-    <div className="min-h-screen pt-32 pb-20">
+    <>
+      <SEO 
+        title={meta.title}
+        description={meta.description}
+        keywords={meta.keywords}
+        canonical={meta.canonical}
+      />
+      <div className="min-h-screen pt-32 pb-20">
       <div className="container-custom">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -45,7 +55,8 @@ const CaseStudies = () => {
           ))}
         </div>
       </div>
-    </div>
+      </div>
+    </>
   );
 };
 

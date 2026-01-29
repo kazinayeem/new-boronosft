@@ -1,10 +1,20 @@
+import SEO from '../components/SEO';
+import { pageMetadata } from '../config/seo';
 import { motion } from 'framer-motion';
 import { Mail, Linkedin, Github, Globe, MapPin, Briefcase } from 'lucide-react';
 import { teamMembers } from '../data/siteData';
 
 const Teams = () => {
+  const meta = pageMetadata.teams;
   return (
-    <div className="min-h-screen pt-32 pb-20">
+    <>
+      <SEO 
+        title={meta.title}
+        description={meta.description}
+        keywords={meta.keywords}
+        canonical={meta.canonical}
+      />
+      <div className="min-h-screen pt-32 pb-20">
       {/* Header */}
       <section className="container-custom mb-16">
         <motion.div
@@ -177,7 +187,8 @@ const Teams = () => {
           </div>
         </motion.div>
       </section>
-    </div>
+      </div>
+    </>
   );
 };
 

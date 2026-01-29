@@ -1,7 +1,10 @@
+import SEO from '../components/SEO';
+import { pageMetadata } from '../config/seo';
 import { motion } from 'framer-motion';
 import { Calendar, User, ArrowRight } from 'lucide-react';
 
 const Blog = () => {
+  const meta = pageMetadata.blog;
   const posts = [
     { 
       id: 1, 
@@ -86,7 +89,14 @@ const Blog = () => {
   ];
 
   return (
-    <div className="min-h-screen pt-32 pb-20">
+    <>
+      <SEO 
+        title={meta.title}
+        description={meta.description}
+        keywords={meta.keywords}
+        canonical={meta.canonical}
+      />
+      <div className="min-h-screen pt-32 pb-20">
       <div className="container-custom">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -134,7 +144,8 @@ const Blog = () => {
           ))}
         </div>
       </div>
-    </div>
+      </div>
+    </>
   );
 };
 

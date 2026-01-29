@@ -1,9 +1,19 @@
+import SEO from '../components/SEO';
+import { pageMetadata } from '../config/seo';
 import { motion } from 'framer-motion';
 import { Building2, Target, Users, Award } from 'lucide-react';
 
 const About = () => {
+  const meta = pageMetadata.about;
   return (
-    <div className="min-h-screen pt-32 pb-20">
+    <>
+      <SEO 
+        title={meta.title}
+        description={meta.description}
+        keywords={meta.keywords}
+        canonical={meta.canonical}
+      />
+      <div className="min-h-screen pt-32 pb-20">
       <div className="container-custom">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -61,7 +71,8 @@ const About = () => {
           </div>
         </motion.div>
       </div>
-    </div>
+      </div>
+    </>
   );
 };
 

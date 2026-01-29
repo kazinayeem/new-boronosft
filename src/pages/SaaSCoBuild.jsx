@@ -1,6 +1,9 @@
+import SEO from '../components/SEO';
+import { pageMetadata } from '../config/seo';
 import { Link } from 'react-router-dom';
 
 const SaaSCoBuild = () => {
+  const meta = pageMetadata.saasCobuild;
   const offers = [
     {
       title: 'AI product acceleration',
@@ -23,7 +26,14 @@ const SaaSCoBuild = () => {
   ];
 
   return (
-    <section className="py-20">
+    <>
+      <SEO 
+        title={meta.title}
+        description={meta.description}
+        keywords={meta.keywords}
+        canonical={meta.canonical}
+      />
+      <section className="py-20">
       <div className="container-custom max-w-5xl">
         <div className="bg-white rounded-3xl shadow-xl border border-gray-100 p-10 md:p-14">
           <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-6 mb-10">
@@ -66,7 +76,8 @@ const SaaSCoBuild = () => {
           </div>
         </div>
       </div>
-    </section>
+      </section>
+    </>
   );
 };
 

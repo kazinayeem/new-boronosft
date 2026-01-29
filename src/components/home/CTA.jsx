@@ -38,7 +38,7 @@ const CTA = () => {
               </Link>
 
               <a 
-                href="tel:+8801234567890" 
+                href="tel:+8801718485840" 
                 className="bg-blue-700/50 backdrop-blur-sm border-2 border-white/30 text-white px-8 py-4 rounded-xl font-semibold hover:bg-blue-700 hover:shadow-2xl hover:scale-105 transition-all duration-300 flex items-center space-x-2"
               >
                 <Phone size={20} />

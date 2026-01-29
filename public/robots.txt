@@ -1,0 +1,30 @@
+# BornoSoft robots.txt
+# Allow all search engines to crawl the site
+
+User-agent: *
+Allow: /
+Disallow: /admin/
+Disallow: /private/
+Disallow: /*.json$
+Disallow: /*.xml$
+
+# Googlebot specific
+User-agent: Googlebot
+Allow: /
+
+# Bingbot specific
+User-agent: Bingbot
+Allow: /
+
+# Crawl-delay and Request-rate
+Crawl-delay: 1
+Request-rate: 1/10
+
+# Sitemap location
+Sitemap: https://bornosoftnr.com/sitemap.xml
+
+# Cache settings
+Cache-Control: public, max-age=604800
+
+# Contact info
+# For issues contact: info@bornosoftnr.com

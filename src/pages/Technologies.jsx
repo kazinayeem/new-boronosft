@@ -1,7 +1,10 @@
+import SEO from '../components/SEO';
+import { pageMetadata } from '../config/seo';
 import { motion } from 'framer-motion';
 import { technologies } from '../data/siteData';
 
 const Technologies = () => {
+  const meta = pageMetadata.technologies;
   const categories = {
     frontend: technologies.filter(t => t.category === 'frontend'),
     backend: technologies.filter(t => t.category === 'backend'),
@@ -12,7 +15,14 @@ const Technologies = () => {
   };
 
   return (
-    <div className="min-h-screen pt-32 pb-20">
+    <>
+      <SEO 
+        title={meta.title}
+        description={meta.description}
+        keywords={meta.keywords}
+        canonical={meta.canonical}
+      />
+      <div className="min-h-screen pt-32 pb-20">
       <div className="container-custom">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -54,7 +64,8 @@ const Technologies = () => {
           ))}
         </div>
       </div>
-    </div>
+      </div>
+    </>
   );
 };
 

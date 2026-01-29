@@ -1,9 +1,12 @@
+import SEO from '../components/SEO';
+import { pageMetadata } from '../config/seo';
 import { motion } from 'framer-motion';
 import { Mail, Phone, MapPin, Send } from 'lucide-react';
 import { companyInfo } from '../data/siteData';
 import { useState } from 'react';
 
 const Contact = () => {
+  const meta = pageMetadata.contact;
   const [formData, setFormData] = useState({
     name: '',
     email: '',
@@ -19,7 +22,14 @@ const Contact = () => {
   };
 
   return (
-    <div className="min-h-screen pt-32 pb-20">
+    <>
+      <SEO 
+        title={meta.title}
+        description={meta.description}
+        keywords={meta.keywords}
+        canonical={meta.canonical}
+      />
+      <div className="min-h-screen pt-32 pb-20">
       <div className="container-custom">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -74,7 +84,7 @@ const Contact = () => {
                   value={formData.phone}
                   onChange={(e) => setFormData({...formData, phone: e.target.value})}
                   className="w-full px-4 py-3 border-2 border-gray-200 rounded-xl focus:border-blue-600 focus:outline-none transition-colors duration-300"
-                  placeholder="+880 1234-567890"
+                  placeholder="+8801718485840"
                 />
               </div>
               <div>
@@ -123,6 +133,20 @@ const Contact = () => {
                     <p className="text-gray-600">{companyInfo.email}</p>
                   </div>
                 </a>
+                <a href="mailto:ahmad2305341016@diu.edu.bd" className="flex items-start space-x-4 p-4 rounded-xl hover:bg-blue-50 transition-colors duration-300">
+                  <Mail className="text-blue-600 flex-shrink-0 mt-1" size={24} />
+                  <div>
+                    <h3 className="font-semibold text-gray-900">Team Email (Reduan)</h3>
+                    <p className="text-gray-600">ahmad2305341016@diu.edu.bd</p>
+                  </div>
+                </a>
+                <a href="mailto:nayeem2305341022@diu.edu.bd" className="flex items-start space-x-4 p-4 rounded-xl hover:bg-blue-50 transition-colors duration-300">
+                  <Mail className="text-blue-600 flex-shrink-0 mt-1" size={24} />
+                  <div>
+                    <h3 className="font-semibold text-gray-900">Team Email (Nayeem)</h3>
+                    <p className="text-gray-600">nayeem2305341022@diu.edu.bd</p>
+                  </div>
+                </a>
                 <a href={`tel:${companyInfo.phone}`} className="flex items-start space-x-4 p-4 rounded-xl hover:bg-blue-50 transition-colors duration-300">
                   <Phone className="text-blue-600 flex-shrink-0 mt-1" size={24} />
                   <div>
@@ -134,24 +158,30 @@ const Contact = () => {
             </div>
 
             <div className="card bg-gradient-to-br from-blue-600 to-purple-600 text-white">
-              <h2 className="text-2xl font-bold mb-6">Office Locations</h2>
-              <div className="space-y-4">
-                {companyInfo.addresses.map((office, index) => (
-                  <div key={index} className="flex items-start space-x-3 p-4 bg-white/10 rounded-xl backdrop-blur-sm">
-                    <MapPin className="flex-shrink-0 mt-1" size={24} />
-                    <div>
-                      <h3 className="font-semibold mb-1">{office.country}</h3>
-                      <p className="text-blue-100 text-sm mb-1">{office.address}</p>
-                      <p className="text-blue-100 text-sm">{office.phone}</p>
+              <h2 className="text-2xl font-bold mb-6">Office Location</h2>
+              <div className="space-y-3">
+                <div className="flex items-start space-x-3 p-4 bg-white/10 rounded-xl backdrop-blur-sm">
+                  <MapPin className="flex-shrink-0 mt-1" size={24} />
+                  <div>
+                    <h3 className="font-semibold mb-2">Mirpur, Dhaka</h3>
+                    <p className="text-blue-100 text-sm mb-3">Mirpur, Dhaka, Bangladesh</p>
+                    <div className="space-y-2">
+                      <p className="text-blue-100 text-sm">
+                        <a href="tel:+8801718485840" className="hover:text-white transition-colors">+880 1718-485840</a>
+                      </p>
+                      <p className="text-blue-100 text-sm">
+                        <a href="tel:+8801943124216" className="hover:text-white transition-colors">+880 1943-124216</a>
+                      </p>
                     </div>
                   </div>
-                ))}
+                </div>
               </div>
             </div>
           </motion.div>
         </div>
       </div>
-    </div>
+      </div>
+    </>
   );
 };
 

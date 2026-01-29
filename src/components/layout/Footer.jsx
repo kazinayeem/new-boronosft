@@ -73,9 +73,22 @@ const Footer = () => {
                 <Mail size={18} />
                 <span>{companyInfo.email}</span>
               </a>
-              <a href={`tel:${companyInfo.phone}`} className="flex items-center space-x-2 text-gray-400 hover:text-white transition-colors duration-300">
+              <a href="mailto:ahmad2305341016@diu.edu.bd" className="flex items-center space-x-2 text-gray-400 hover:text-white transition-colors duration-300">
+                <Mail size={18} />
+                <span>ahmad2305341016@diu.edu.bd</span>
+              </a>
+              <a href="mailto:nayeem2305341022@diu.edu.bd" className="flex items-center space-x-2 text-gray-400 hover:text-white transition-colors duration-300">
+                <Mail size={18} />
+                <span>nayeem2305341022@diu.edu.bd</span>
+              </a>
+              
+              <a href="tel:+8801718485840" className="flex items-center space-x-2 text-gray-400 hover:text-white transition-colors duration-300">
                 <Phone size={18} />
-                <span>{companyInfo.phone}</span>
+                <span>+880 1718-485840</span>
+              </a>
+              <a href="tel:+8801943124216" className="flex items-center space-x-2 text-gray-400 hover:text-white transition-colors duration-300">
+                <Phone size={18} />
+                <span>+880 1943-124216</span>
               </a>
             </div>
 
@@ -144,51 +157,6 @@ const Footer = () => {
                 </li>
               ))}
             </ul>
-          </div>
-
-          {/* Team */}
-          <div>
-            <h3 className="text-lg font-semibold mb-4">Leadership</h3>
-            <p className="text-gray-400 text-sm mb-4">Meet our experienced team of leaders</p>
-            <Link
-              to="/teams"
-              className="inline-block bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-lg font-semibold transition-colors text-sm"
-            >
-              View Team
-            </Link>
-          </div>
-        </div>
-
-        {/* Referral & Partnerships */}
-        <div className="mt-12 grid grid-cols-1 lg:grid-cols-2 gap-6 p-6 bg-white/5 border border-white/10 rounded-2xl">
-          <div className="space-y-3">
-            <h3 className="text-lg font-semibold">Refer & Earn (10-15%)</h3>
-            <p className="text-gray-300 text-sm leading-relaxed">
-              Are you an agency or trusted partner? Refer qualified projects and earn 10-15% on closed deals. We handle delivery; you keep your client relationships strong.
-            </p>
-          </div>
-          <div className="space-y-3">
-            <h3 className="text-lg font-semibold">Have a SaaS idea?</h3>
-            <p className="text-gray-300 text-sm leading-relaxed">
-              Bring your product idea—even with no upfront budget. We can co-build on a commission/revenue-share model and get you to market fast.
-            </p>
-          </div>
-        </div>
-
-        {/* Office Locations */}
-        <div className="mt-12 pt-8 border-t border-gray-700">
-          <h3 className="text-lg font-semibold mb-6">Our Global Offices</h3>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-            {companyInfo.addresses.map((office, index) => (
-              <div key={index} className="flex items-start space-x-3">
-                <MapPin size={20} className="text-blue-400 mt-1 flex-shrink-0" />
-                <div>
-                  <h4 className="font-semibold mb-1">{office.country}</h4>
-                  <p className="text-sm text-gray-400 mb-1">{office.address}</p>
-                  <p className="text-sm text-gray-400">{office.phone}</p>
-                </div>
-              </div>
-            ))}
           </div>
         </div>
       </div>

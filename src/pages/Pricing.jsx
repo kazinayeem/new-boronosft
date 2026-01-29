@@ -1,9 +1,12 @@
 import { useState } from 'react';
+import SEO from '../components/SEO';
+import { pageMetadata } from '../config/seo';
 import { motion } from 'framer-motion';
 import { Check, DollarSign, Banknote } from 'lucide-react';
 import { Link } from 'react-router-dom';
 
 const Pricing = () => {
+  const meta = pageMetadata.pricing;
   const [currency, setCurrency] = useState('BDT');
 
   const plans = [
@@ -179,7 +182,14 @@ const Pricing = () => {
   const currencySymbol = currency === 'BDT' ? '৳' : '$';
 
   return (
-    <div className="min-h-screen pt-32 pb-20">
+    <>
+      <SEO 
+        title={meta.title}
+        description={meta.description}
+        keywords={meta.keywords}
+        canonical={meta.canonical}
+      />
+      <div className="min-h-screen pt-32 pb-20">
       {/* Header */}
       <section className="container-custom mb-16">
         <motion.div
@@ -443,7 +453,8 @@ const Pricing = () => {
           ))}
         </div>
       </section>
-    </div>
+      </div>
+    </>
   );
 };
 

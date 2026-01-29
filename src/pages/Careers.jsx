@@ -1,7 +1,10 @@
+import SEO from '../components/SEO';
+import { pageMetadata } from '../config/seo';
 import { motion } from 'framer-motion';
 import { Users, MapPin, Clock } from 'lucide-react';
 
 const Careers = () => {
+  const meta = pageMetadata.careers;
   const positions = [
     { id: 1, title: 'Senior React Developer', location: 'Dhaka, Bangladesh', type: 'Full-time' },
     { id: 2, title: 'Node.js Backend Developer', location: 'Remote', type: 'Full-time' },
@@ -9,7 +12,14 @@ const Careers = () => {
   ];
 
   return (
-    <div className="min-h-screen pt-32 pb-20">
+    <>
+      <SEO 
+        title={meta.title}
+        description={meta.description}
+        keywords={meta.keywords}
+        canonical={meta.canonical}
+      />
+      <div className="min-h-screen pt-32 pb-20">
       <div className="container-custom">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -54,7 +64,8 @@ const Careers = () => {
           ))}
         </div>
       </div>
-    </div>
+      </div>
+    </>
   );
 };
 

@@ -1,8 +1,18 @@
+import SEO from '../components/SEO';
+import { pageMetadata } from '../config/seo';
 import { motion } from 'framer-motion';
 
 const PrivacyPolicy = () => {
+  const meta = pageMetadata.contact; // Using contact metadata as fallback
   return (
-    <div className="min-h-screen pt-32 pb-20">
+    <>
+      <SEO 
+        title="Privacy Policy | BornoSoft"
+        description="BornoSoft Privacy Policy - Learn how we collect, use, and protect your personal information."
+        keywords="privacy policy, data protection, personal information"
+        canonical="/privacy-policy"
+      />
+      <div className="min-h-screen pt-32 pb-20">
       <div className="container-custom max-w-4xl">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -48,7 +58,8 @@ const PrivacyPolicy = () => {
           </div>
         </motion.div>
       </div>
-    </div>
+      </div>
+    </>
   );
 };
 

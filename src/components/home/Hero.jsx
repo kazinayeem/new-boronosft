@@ -67,7 +67,7 @@ const Hero = () => {
                 Start Your Project
                 <ArrowRight className="inline-block ml-2 group-hover:translate-x-1 transition-transform" size={20} />
               </Link>
-              <a href="tel:+8801234567890" className="btn-secondary group">
+              <a href="tel:+8801718485840" className="btn-secondary group">
                 <Phone className="inline-block mr-2" size={20} />
                 Call Now
               </a>

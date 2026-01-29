@@ -5,23 +5,13 @@ export const companyInfo = {
   tagline: "Smart Software Solutions for Modern Businesses",
   description: "A Global Smart Software Solutions Company delivering enterprise-grade software, automation, and IT services to businesses worldwide.",
   email: "info@bornosoftnr.com",
-  phone: "+880 1234-567890",
+  phone: "+880 1718-485840",
   addresses: [
     {
       country: "Bangladesh",
       address: "House 123, Road 12, Dhanmondi, Dhaka 1205",
-      phone: "+880 1234-567890"
+      phone: "+880 1718-485840"
     },
-    {
-      country: "UAE",
-      address: "Business Bay, Dubai, United Arab Emirates",
-      phone: "+971 4 123 4567"
-    },
-    {
-      country: "UK",
-      address: "London Business Centre, 123 Oxford Street, London",
-      phone: "+44 20 1234 5678"
-    }
   ],
   social: {
     facebook: "https://facebook.com/bornosoftnr",
