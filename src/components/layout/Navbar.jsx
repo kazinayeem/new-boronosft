@@ -54,6 +54,10 @@ const Navbar = () => {
             <span className="font-bold text-lg text-blue-600">
               BornoSoft-NR
             </span>
+            <span className="inline-flex items-center gap-1 px-2 py-1 rounded-full bg-blue-100 text-blue-700 text-xs font-semibold">
+              <span className="w-2 h-2 bg-blue-700 rounded-full animate-pulse"></span>
+              BETA
+            </span>
           </Link>
 
           {/* Desktop Menu */}
