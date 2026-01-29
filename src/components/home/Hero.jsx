@@ -1,4 +1,3 @@
-import { motion } from 'framer-motion';
 import { ArrowRight, Phone } from 'lucide-react';
 import { Link } from 'react-router-dom';
 
@@ -28,7 +27,7 @@ const Hero = () => {
               className="inline-block mb-4"
             >
               <span className="px-4 py-2 bg-blue-100 text-blue-600 rounded-full text-sm font-semibold">
-                🚀 Global Smart Solutions Provider
+                🚀 Global Smart Solutions Provider - test
               </span>
             </motion.div>
 
