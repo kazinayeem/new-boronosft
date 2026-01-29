@@ -291,38 +291,6 @@ export const pricingPlans = [
   }
 ];
 
-// Team
-export const teamMembers = [
-  {
-    id: 1,
-    name: "Nayeem Rahman",
-    role: "Co-Founder & CEO",
-    focus: "Product strategy, enterprise delivery",
-    experience: "10+ yrs in SaaS & cloud"
-  },
-  {
-    id: 2,
-    name: "Farhana Islam",
-    role: "Head of Engineering",
-    focus: "Solution architecture, DevOps",
-    experience: "9+ yrs in scalable systems"
-  },
-  {
-    id: 3,
-    name: "Arif Chowdhury",
-    role: "Lead Frontend Engineer",
-    focus: "React, performance, accessibility",
-    experience: "7+ yrs in web platforms"
-  },
-  {
-    id: 4,
-    name: "Tahsin Ahmed",
-    role: "Lead Mobile Engineer",
-    focus: "React Native, Flutter, CI/CD",
-    experience: "7+ yrs in mobile products"
-  }
-];
-
 // Clients
 export const clients = [
   { id: 1, name: "TechMart", sector: "E-commerce", result: "150% sales lift" },
@@ -366,3 +334,40 @@ export const faqs = [
     answer: "Yes, we offer subscription models for ongoing development, maintenance, and support services. This includes monthly retainers for dedicated resources and continuous improvement."
   }
 ];
+
+// Team Data
+export const teamMembers = [
+  {
+    id: 1,
+    name: "Mohammad Ali Nayeem",
+    role: "Co-Founder & CEO",
+    title: "Full Stack Developer & Software Engineer",
+    description: "Passionate about building scalable, user-friendly, and modern web applications. Experienced in full-stack development with a strong interest in AI, Machine Learning, and Data Science.",
+    location: "Dhaka, Bangladesh",
+    image: "https://avatars.githubusercontent.com/u/85398213?v=4",
+    email: "nayeem@bornosoft.com",
+    social: {
+      linkedin: "https://www.linkedin.com/in/mohammad-ali-nayeem/",
+      github: "https://github.com/kazinayeem",
+      twitter: "https://twitter.com/mohammadalinayeem",
+      portfolio: "https://kazinayeem.site"
+    }
+  },
+  {
+    id: 2,
+    name: "Reduan Ahmad",
+    role: "CTO & Co-Founder",
+    title: "Full Stack Developer & Software Engineer",
+    description: "Dedicated to creating modern, efficient, and visually engaging web experiences. Skilled in frontend and backend development, transforming ideas into seamless digital solutions.",
+    location: "Dhaka, Bangladesh",
+    image: "https://avatars.githubusercontent.com/u/143122014?v=4",
+    email: "reduanahmadswe@gmail.com",
+    social: {
+      linkedin: "https://linkedin.com/in/reduanahmadswe",
+      github: "https://github.com/reduanahmadswe",
+      twitter: "https://twitter.com/reduanahmadswe",
+      portfolio: "https://reduanahmadswe.site"
+    }
+  }
+];
+

@@ -2,11 +2,13 @@ import { useState, useEffect } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { Menu, X, ChevronDown } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
+import PricingCalculator from "../PricingCalculator";
 
 const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
   const [dropdownOpen, setDropdownOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
+  const [calculatorOpen, setCalculatorOpen] = useState(false);
   const location = useLocation();
 
   useEffect(() => {
@@ -34,20 +36,23 @@ const Navbar = () => {
       ],
     },
     { name: "Technologies", path: "/technologies" },
+    { name: "Pricing", path: "/pricing" },
     { name: "Careers", path: "/careers" },
     { name: "Blog", path: "/blog" },
   ];
 
   return (
-    <nav
-      className={`fixed top-0 z-50 w-full transition-all ${
-        scrolled
-          ? "bg-white/90 backdrop-blur shadow-md"
-          : "bg-transparent"
-      }`}
-    >
-      <div className="max-w-7xl mx-auto px-4">
-        <div className="flex h-16 items-center justify-between">
+    <>
+      <PricingCalculator isOpen={calculatorOpen} onClose={() => setCalculatorOpen(false)} />
+      <nav
+        className={`fixed top-0 z-50 w-full transition-all ${
+          scrolled
+            ? "bg-white/90 backdrop-blur shadow-md"
+            : "bg-transparent"
+        }`}
+      >
+        <div className="max-w-7xl mx-auto px-4">
+          <div className="flex h-16 items-center justify-between">
           {/* Logo */}
           <Link to="/" className="flex items-center gap-2">
             <img src="/logo.png" className="h-9" alt="logo" />
@@ -62,8 +67,8 @@ const Navbar = () => {
 
           {/* Desktop Menu */}
           <div className="hidden lg:flex items-center gap-8">
-            {navLinks.map((link) =>
-              link.hasDropdown ? (
+            {navLinks.map((link) => (
+                link.hasDropdown ? (
                 <div
                   key={link.name}
                   className="relative"
@@ -109,7 +114,7 @@ const Navbar = () => {
                   {link.name}
                 </Link>
               )
-            )}
+            ))}
 
             <Link
               to="/contact"
@@ -150,7 +155,7 @@ const Navbar = () => {
               ))}
               <Link
                 to="/contact"
-                className="block text-center rounded-lg bg-blue-600 py-2 text-white"
+                className="block text-center rounded-lg bg-blue-600 py-2 text-white font-medium hover:bg-blue-700"
               >
                 Contact Us
               </Link>
@@ -159,6 +164,7 @@ const Navbar = () => {
         )}
       </AnimatePresence>
     </nav>
+    </>
   );
 };
 

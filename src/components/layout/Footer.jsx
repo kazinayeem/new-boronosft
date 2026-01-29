@@ -45,6 +45,7 @@ const Footer = () => {
   ];
 
   return (
+    <>
     <footer className="bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 text-white">
       {/* Main Footer Content */}
       <div className="container-custom py-16">
@@ -143,6 +144,18 @@ const Footer = () => {
                 </li>
               ))}
             </ul>
+          </div>
+
+          {/* Team */}
+          <div>
+            <h3 className="text-lg font-semibold mb-4">Leadership</h3>
+            <p className="text-gray-400 text-sm mb-4">Meet our experienced team of leaders</p>
+            <Link
+              to="/teams"
+              className="inline-block bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-lg font-semibold transition-colors text-sm"
+            >
+              View Team
+            </Link>
           </div>
         </div>
 

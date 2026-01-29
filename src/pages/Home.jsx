@@ -1,4 +1,5 @@
 import Hero from '../components/home/Hero';
+import CredibilitySection from '../components/home/CredibilitySection';
 import Process from '../components/home/Process';
 import Industries from '../components/home/Industries';
 import Features from '../components/home/Features';
@@ -14,6 +15,7 @@ const Home = () => {
   return (
     <div className="min-h-screen">
       <Hero />
+      <CredibilitySection />
       <Process />
       <Industries />
       <Features />
