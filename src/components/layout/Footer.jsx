@@ -108,7 +108,7 @@ const Footer = () => {
             </div>
           </div>
 
-          {/* Company Links */}
+     
           <div>
             <h3 className="text-lg font-semibold mb-4">Company</h3>
             <ul className="space-y-3">
