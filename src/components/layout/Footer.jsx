@@ -84,7 +84,7 @@ const Footer = () => {
               
               <a href="tel:+8801718485840" className="flex items-center space-x-2 text-gray-400 hover:text-white transition-colors duration-300">
                 <Phone size={18} />
-                <span>+880 1718-485840</span>
+                <span>+8801718-485840</span>
               </a>
               <a href="tel:+8801943124216" className="flex items-center space-x-2 text-gray-400 hover:text-white transition-colors duration-300">
                 <Phone size={18} />
