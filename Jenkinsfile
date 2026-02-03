@@ -15,5 +15,11 @@ pipeline {
                 dockerBuild()
             }
         }
+
+         stage('Success') {
+            steps {
+                Success()
+            }
+        }
     }
 }
